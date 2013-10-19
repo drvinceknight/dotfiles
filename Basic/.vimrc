@@ -33,6 +33,16 @@ set noswapfile
 " Take care of some typos:
 cabbrev W w
 cabbrev Wq wq
+" Better copy & paste
+" When you want to paste large blocks of code into vim, press F2 before you
+" paste. At the bottom you should see ``-- INSERT (paste) --``.
+set pastetoggle=<F2>
+set clipboard=unnamed
+" easier moving of code blocks
+" Try to go into visual mode (v), thenselect several lines of code here and
+" then press ``>`` several times.
+vnoremap < <gv  " better indentation
+vnoremap > >gv  " better indentation
 """"""
 " Sage settings (from Franco Saliola)
 autocmd BufRead,BufNewFile *.sage,*.pyx,*.spyx set filetype=python
