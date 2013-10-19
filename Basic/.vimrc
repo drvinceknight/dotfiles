@@ -11,7 +11,7 @@ nnoremap <C-N> :next<Enter>
 nnoremap <C-P> :prev<Enter>
 "This makes vim prompt you when quitting an unsaved file etc...
 set confirm
-"This makes vim show the current row and column at the bottomg right of the screen
+"This makes vim show the current row and column at the bottom right of the screen
 set ruler
 " Remove any trailing whitespace that is in the file
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
@@ -22,18 +22,19 @@ nmap <leader>l :!latexmk -xelatex -bibtex- <cr>
 nmap <leader>c :!latexmk -c <cr>
 "Turns spell check on
 set spell
-"Markdown to HTML
-nmap <leader>md :%!/usr/local/bin/Markdown.pl --html4tags <cr>
 "Sorts out tabs
 set tabstop=4
 set shiftwidth=4
 set expandtab
+"Sorts out backspace behaviour:
+set backspace=indent,eol,start
+" Get rid of swp files (I backup myself)
+set noswapfile
+" Take care of some typos:
+cabbrev W w
+cabbrev Wq wq
 """"""
 " Sage settings (from Franco Saliola)
 autocmd BufRead,BufNewFile *.sage,*.pyx,*.spyx set filetype=python
 autocmd Filetype python set tabstop=4|set shiftwidth=4|set expandtab
 autocmd FileType python set makeprg=sage\ -b\ &&\ sage\ -t\ %
-"Sorts out backspace behaviour:
-set backspace=indent,eol,start
-" Get rid of swp files (I backup myself)
-set noswapfile
