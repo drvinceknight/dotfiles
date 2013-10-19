@@ -15,6 +15,8 @@ def query_yes_no(question, default="yes"):
         an answer is required of the user).
 
     The "answer" return value is one of "yes" or "no".
+
+    (Shamelessly stolen from stackoverflow: http://stackoverflow.com/questions/3041986/python-command-line-yes-no-input/3041990#3041990)
     """
     valid = {"yes":True,   "y":True,  "ye":True,
              "no":False,     "n":False}
@@ -28,15 +30,14 @@ def query_yes_no(question, default="yes"):
         raise ValueError("invalid default answer: '%s'" % default)
 
     while True:
-        sys.stdout.write(question + prompt)
+        print question + prompt
         choice = raw_input().lower()
         if default is not None and choice == '':
             return valid[default]
         elif choice in valid:
             return valid[choice]
         else:
-            sys.stdout.write("Please respond with 'yes' or 'no' "\
-                             "(or 'y' or 'n').\n")
+            print "Please respond with 'yes' or 'no' (or 'y' or 'n')"
 
 parser = argparse.ArgumentParser(description="""A script to setup dotfiles. This simply creates a symbolic link from the vimrc in the Basic subdirectory to the home directory. In the future I'll be adding options to create more complex vimrcs.""")
 parser.parse_args()
@@ -49,6 +50,6 @@ if os.path.exists('%s/.vimrc' % home):
     if query_yes_no("You already have a .vimrc file in %s, do you want to delete it and set the symbolic link?" % home):
         os.remove('%s/.vimrc' % home)
         os.symlink(target, '%s/.vimrc' % home)
-        sys.stdout.write("symlink created")
+        print "symlink created"
     else:
-        sys.stdout.write("symlink not created")
+        print "symlink not created"
