@@ -53,3 +53,6 @@ if os.path.exists('%s/.vimrc' % home):
         print "symlink created"
     else:
         print "symlink not created"
+else:
+	os.symlink(target, '%s/.vimrc' % home)
+   	print "symlink created"
