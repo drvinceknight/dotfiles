@@ -56,3 +56,18 @@ if os.path.exists('%s/.vimrc' % home):
 else:
 	os.symlink(target, '%s/.vimrc' % home)
    	print "symlink created"
+
+# Create symbolic link for the bash_aliases file
+target = "./Bash/bash_aliases"
+target = os.path.abspath(target)
+home = os.path.expanduser("~")
+if os.path.exists('%s/.bash_aliases' % home):
+    if query_yes_no("You already have a .bash_aliases file in %s, do you want to delete it and set the symbolic link?" % home):
+        os.remove('%s/.bash_aliases' % home)
+        os.symlink(target, '%s/.bash_aliases' % home)
+        print "symlink created"
+    else:
+        print "symlink not created"
+else:
+	os.symlink(target, '%s/.bash_aliases' % home)
+   	print "symlink created"
