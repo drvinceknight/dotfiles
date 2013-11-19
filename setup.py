@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-A script to setup .vimrc.
+A script to setup .vimrc and .bash_aliases.
 """
 import argparse
 import os
@@ -43,7 +43,7 @@ parser = argparse.ArgumentParser(description="""A script to setup dotfiles. This
 parser.parse_args()
 
 # Create symbolic link for the vimrc file
-target = "./Basic/.vimrc"
+target = "./Basic/vimrc"
 target = os.path.abspath(target)
 home = os.path.expanduser("~")
 if os.path.exists('%s/.vimrc' % home):
