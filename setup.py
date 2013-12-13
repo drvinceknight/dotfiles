@@ -43,7 +43,7 @@ parser = argparse.ArgumentParser(description="""A script to setup dotfiles. This
 parser.parse_args()
 
 # Create symbolic link for the vimrc file
-target = "./Basic/vimrc"
+target = "./Vim/vimrc"
 target = os.path.abspath(target)
 home = os.path.expanduser("~")
 if os.path.exists('%s/.vimrc' % home):
