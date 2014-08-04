@@ -16,8 +16,8 @@ Plugin 'gmarik/Vundle.vim'
 " Vim-latex
 Plugin 'jcf/vim-latex'
 
-" git-vim
-Plugin 'motemen/git-vim'
+" fugitive.vim
+Plugin 'tpope/vim-fugitive'
 
 
 "All of your Plugins must be added before the following line
