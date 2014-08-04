@@ -13,12 +13,17 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-" Vim-latex
+" Vim-latex: LaTeX
 Plugin 'jcf/vim-latex'
 
-" fugitive.vim
+" fugitive.vim: Git
 Plugin 'tpope/vim-fugitive'
 
+" tabularize: automates tabularization
+Plugin 'godlygeek/tabular'
+
+" vim-markdown: markdown syntax
+Plugin 'plasticboy/vim-markdown'
 
 "All of your Plugins must be added before the following line
 call vundle#end()            " required
