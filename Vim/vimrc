@@ -25,6 +25,9 @@ Plugin 'godlygeek/tabular'
 " vim-markdown: markdown syntax
 Plugin 'plasticboy/vim-markdown'
 
+" nerdtree: for file exploration
+Plugin 'scrooloose/nerdtree'
+
 "All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
