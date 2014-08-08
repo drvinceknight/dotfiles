@@ -1,5 +1,5 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Vundle stuff "
+" Vundle (package managers) stuff "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -55,9 +55,6 @@ set ruler
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 " Sets autoindent
 set autoindent
-"LaTeX mapping
-nmap <leader>l :!latexmk -xelatex -bibtex- <cr>
-nmap <leader>c :!latexmk -c <cr>
 "Turns spell check on
 set spell
 "Sorts out tabs
@@ -81,6 +78,15 @@ set clipboard=unnamed
 " then press ``>`` several times.
 vnoremap < <gv  " better indentation
 vnoremap > >gv  " better indentation
+
+" Movement
+" =========
+" bind Ctrl+<movement> keys to move around the windows, instead of using Ctrl+w + <movement>
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-l> <c-w>l
+map <c-h> <c-w>h
+
 """"""
 " Sage settings (from Franco Saliola)
 autocmd BufRead,BufNewFile *.sage,*.pyx,*.spyx set filetype=python
