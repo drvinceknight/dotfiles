@@ -28,6 +28,12 @@ Plugin 'plasticboy/vim-markdown'
 " nerdtree: for file exploration
 Plugin 'scrooloose/nerdtree'
 
+" yaml-vim: plugin for yaml file syntax
+Plugin 'ingydotnet/yaml-vim'
+
+" vim-textobj-entire: plugin for more text objects
+Plugin 'kana/vim-textobj-entire'
+
 "All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
