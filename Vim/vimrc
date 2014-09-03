@@ -84,6 +84,9 @@ set clipboard=unnamed
 vnoremap < <gv  " better indentation
 vnoremap > >gv  " better indentation
 
+"Increase the history (memory is cheap)
+set history=200
+
 " Movement
 " =========
 " bind Ctrl+<movement> keys to move around the windows, instead of using Ctrl+w + <movement>
