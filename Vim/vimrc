@@ -28,6 +28,9 @@ Plugin 'plasticboy/vim-markdown'
 " nerdtree: for file exploration
 Plugin 'scrooloose/nerdtree'
 
+" vim-surround: for surrounding visual selections
+Plugin 'tpope/vim-surround'
+
 "All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
