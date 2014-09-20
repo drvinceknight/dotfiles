@@ -33,8 +33,10 @@ Plugin 'scrooloose/nerdtree'
 " vim-surround: for surrounding visual selections
 Plugin 'tpope/vim-surround'
 
-" vim-jedi: auto completions for python, need to update jedi as well
-Plugin 'davidhalter/jedi-vim'
+" jedi-vim: auto completion and more - needs BundleInstall to install (to get
+" jedi).
+Bundle 'git://github.com/davidhalter/jedi-vim'
+
 
 "All of your Plugins must be added before the following line
 call vundle#end()            " required
