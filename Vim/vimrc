@@ -95,13 +95,27 @@ set history=200
 " Movement
 " =========
 " bind Ctrl+<movement> keys to move around the windows, instead of using Ctrl+w + <movement>
-map <c-j> <c-w>j
-map <c-k> <c-w>k
-map <c-l> <c-w>l
-map <c-h> <c-w>h
+nnoremap <C-W><C-J> <C-W><C-J>:call Splitresize()<CR>
+nnoremap <C-W><C-K> <C-W><C-K>:call Splitresize()<CR>
+nnoremap <C-W><C-L> <C-W><C-L>:call Splitresize()<CR>
+nnoremap <C-W><C-H> <C-W><C-H>:call Splitresize()<CR>
+nnoremap <silent><C-J> <C-W><C-J>:call Splitresize()<CR>
+nnoremap <silent><C-K> <C-W><C-K>:call Splitresize()<CR>
+nnoremap <silent><C-L> <C-W><C-L>:call Splitresize()<CR>
+nnoremap <silent><C-H> <C-W><C-H>:call Splitresize()<CR>
 
 """"""
 " Sage settings (from Franco Saliola)
 autocmd BufRead,BufNewFile *.sage,*.pyx,*.spyx set filetype=python
 autocmd Filetype python set tabstop=4|set shiftwidth=4|set expandtab
 autocmd FileType python set makeprg=sage\ -b\ &&\ sage\ -t\ %
+
+"""""""
+" Automatically resize splits (based on http://janneinosaka.blogspot.co.uk/2014/10/automatically-resize-vim-splits.html by Jan Moren)
+""""""""
+function Splitresize()
+    let hmax = max([winwidth(0), float2nr(&columns*0.66), 90])
+    let vmax = max([winheight(0), float2nr(&lines*0.66), 25])
+    exe "vertical resize" . (min([hmax, 140]))
+    exe "resize" . (min([vmax, 60]))
+endfunction
