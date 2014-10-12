@@ -71,3 +71,18 @@ if os.path.exists('%s/.bash_aliases' % home):
 else:
 	os.symlink(target, '%s/.bash_aliases' % home)
    	print "symlink created"
+
+# Create symbolic link for the gitconfig file
+target = "./Git/gitconfig"
+target = os.path.abspath(target)
+home = os.path.expanduser("~")
+if os.path.exists('%s/.gitconfig' % home):
+    if query_yes_no("You already have a .gitconfig file in %s, do you want to delete it and set the symbolic link?" % home):
+        os.remove('%s/.gitconfig' % home)
+        os.symlink(target, '%s/.gitconfig' % home)
+        print "symlink created"
+    else:
+        print "symlink not created"
+else:
+	os.symlink(target, '%s/.gitconfig' % home)
+   	print "symlink created"
