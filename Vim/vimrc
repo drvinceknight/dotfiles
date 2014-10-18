@@ -37,6 +37,9 @@ Plugin 'tpope/vim-surround'
 " jedi).
 Bundle 'git://github.com/davidhalter/jedi-vim'
 
+" vim-autopep8: F8 now runs autopep8
+Bundle 'tell-k/vim-autopep8'
+
 
 "All of your Plugins must be added before the following line
 call vundle#end()            " required
