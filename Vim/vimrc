@@ -33,6 +33,11 @@ Plugin 'scrooloose/nerdtree'
 " vim-surround: for surrounding visual selections
 Plugin 'tpope/vim-surround'
 
+" tagbar: to navigate all the tags of a file
+Plugin 'majutsushi/tagbar'
+" Mapping <F9> to get it to work
+nmap <F9> :TagbarToggle<CR>
+
 " jedi-vim: auto completion and more - needs BundleInstall to install (to get
 " jedi).
 Bundle 'git://github.com/davidhalter/jedi-vim'
