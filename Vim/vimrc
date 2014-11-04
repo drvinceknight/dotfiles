@@ -33,6 +33,7 @@ Plugin 'plasticboy/vim-markdown'
 
 " nerdtree: for file exploration
 Plugin 'scrooloose/nerdtree'
+nmap <F9> :NERDTree<CR>
 
 " vim-surround: for surrounding visual selections
 Plugin 'tpope/vim-surround'
@@ -40,7 +41,7 @@ Plugin 'tpope/vim-surround'
 " tagbar: to navigate all the tags of a file
 Plugin 'majutsushi/tagbar'
 " Mapping <F9> to get it to work
-nmap <F9> :TagbarToggle<CR>
+nmap <F10> :TagbarToggle<CR>
 
 " syntastic: syntax checking
 Plugin 'scrooloose/syntastic'
