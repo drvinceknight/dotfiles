@@ -42,6 +42,10 @@ Plugin 'majutsushi/tagbar'
 " Mapping <F9> to get it to work
 nmap <F9> :TagbarToggle<CR>
 
+" syntastic: syntax checking
+Plugin 'scrooloose/syntastic'
+" For python require flake8 and pylint
+
 " jedi-vim: auto completion and more - needs BundleInstall to install (to get
 " jedi).
 Bundle 'git://github.com/davidhalter/jedi-vim'
