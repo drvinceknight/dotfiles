@@ -105,4 +105,5 @@ else \
   echo " '$Blue$PathShort$Color_Off'\$ "; \
 fi)'
 
-# Alias for git log
+# Alias for fancy ls
+alias lh='ls --group-directories-first --hide=*pyc'
