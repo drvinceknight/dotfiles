@@ -108,6 +108,8 @@ vnoremap > >gv  " better indentation
 "Increase the history (memory is cheap)
 set history=200
 
+"Enable 256 colors
+set t_Co=256
 
 """"""
 " Sage settings (from Franco Saliola)
