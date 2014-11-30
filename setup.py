@@ -86,3 +86,18 @@ if os.path.exists('%s/.gitconfig' % home):
 else:
 	os.symlink(target, '%s/.gitconfig' % home)
    	print "symlink created"
+
+# Create symbolic link for the tmux.conf file
+target = "./Tmux/tmux.conf"
+target = os.path.abspath(target)
+home = os.path.expanduser("~")
+if os.path.exists('%s/.tmux.conf' % home):
+    if query_yes_no("You already have a .tmux.conf file in %s, do you want to delete it and set the symbolic link?" % home):
+        os.remove('%s/.tmux.conf' % home)
+        os.symlink(target, '%s/.tmux.conf' % home)
+        print "symlink created"
+    else:
+        print "symlink not created"
+else:
+	os.symlink(target, '%s/.tmux.conf' % home)
+   	print "symlink created"
