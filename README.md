@@ -17,15 +17,6 @@ the file in this repository.
 
 ## Vince: Here are other things you do when you setup a new box:
 
-### For Vim
-
-You use [vundle](https://github.com/gmarik/Vundle.vim) for your package
-management so do this to set it up:
-
-```
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-```
-
 ### For zsh
 
 You use [oh my zsh](https://github.com/robbyrussell/oh-my-zsh)
@@ -65,6 +56,15 @@ You use [tmux](http://tmux.github.io/):
   ```
   brew install tmux
   ```
+
+### For Vim
+
+You use [vundle](https://github.com/gmarik/Vundle.vim) for your package
+management so do this to set it up:
+
+```
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
 
 ## Vince: this is how to update the dotbot submodule:
 
