@@ -76,6 +76,9 @@ Plugin 'altercation/vim-colors-solarized'
 " Git runtime
 Plugin 'tpope/vim-git'
 
+"Plugin to get text object for camelcase and words with underscores
+Plugin 'bkad/CamelCaseMotion'
+
 "All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
