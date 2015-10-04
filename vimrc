@@ -76,6 +76,9 @@ Plugin 'altercation/vim-colors-solarized'
 " Git runtime
 Plugin 'tpope/vim-git'
 
+" Plugin for function arguments text object
+Plugin 'vim-scripts/argtextobj.vim'
+
 "Plugin to get text object for camelcase and words with underscores
 Plugin 'bkad/CamelCaseMotion'
 
