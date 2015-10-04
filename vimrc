@@ -82,6 +82,9 @@ Plugin 'vim-scripts/argtextobj.vim'
 "Plugin to get text object for camelcase and words with underscores
 Plugin 'bkad/CamelCaseMotion'
 
+" Plugin for indentation level text objects
+Plugin 'michaeljsmith/vim-indent-object'
+
 "All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
