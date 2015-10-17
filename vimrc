@@ -85,6 +85,15 @@ Plugin 'bkad/CamelCaseMotion'
 " Plugin for indentation level text objects
 Plugin 'michaeljsmith/vim-indent-object'
 
+" Plugin for goyo which clears the vim window for extensive writing
+Plugin 'junegunn/goyo.vim'
+
+" Plugin for limelight which focus on writing
+Plugin 'junegunn/limelight.vim'
+" Color name (:help cterm-colors) or ANSI code
+let g:limelight_conceal_ctermfg = 'gray'
+let g:limelight_conceal_ctermfg = 240
+
 "All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
