@@ -94,6 +94,10 @@ Plugin 'junegunn/limelight.vim'
 let g:limelight_conceal_ctermfg = 'gray'
 let g:limelight_conceal_ctermfg = 240
 
+" Plugin for visual splits: Type :VSSplit, :VSSplitAbove or :VSSplitBelow to
+" create a split of a visual selection.
+Bundle 'wellle/visual-split.vim'
+
 "All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
