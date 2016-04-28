@@ -84,3 +84,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH=$PATH:/Library/TeX/texbin
+
+# added by travis gem
+[ -f /Users/vince/.travis/travis.sh ] && source /Users/vince/.travis/travis.sh

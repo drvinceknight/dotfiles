@@ -98,6 +98,9 @@ let g:limelight_conceal_ctermfg = 240
 " create a split of a visual selection.
 Bundle 'wellle/visual-split.vim'
 
+" Vim-fat-finger: common spelling mistakes
+Bundle 'chip/vim-fat-finger'
+
 "All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
