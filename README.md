@@ -57,6 +57,13 @@ You use [tmux](http://tmux.github.io/):
   brew install tmux
   ```
 
+### Solarized color scheme
+
+You like a solarized color theme in your terminal:
+
+- On ubuntu you use
+  [gnome-terminal-colors-solarized](https://github.com/Anthony25/gnome-terminal-colors-solarized)
+
 ### For Vim
 
 You use [vundle](https://github.com/gmarik/Vundle.vim) for your package
@@ -65,6 +72,12 @@ management so do this to set it up:
 ```
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
+
+## For private repositories
+
+You use [git-remote-dropbox](https://github.com/anishathalye/git-remote-dropbox)
+for your private dropbox repositories. You need to get a token from [the dropbox
+"My Apps" section](https://www.dropbox.com/developers/apps).
 
 ## Vince: this is how to update the dotbot submodule:
 
