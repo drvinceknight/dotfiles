@@ -16,7 +16,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Vim-latex: LaTeX
-Plugin 'jcf/vim-latex'
+Plugin 'lervag/vimtex'
 
 " vim-airline: light weight alternative to powerline
 Plugin 'bling/vim-airline'
