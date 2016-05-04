@@ -85,6 +85,10 @@ Plugin 'bkad/CamelCaseMotion'
 " Plugin for indentation level text objects
 Plugin 'michaeljsmith/vim-indent-object'
 
+" Plugin for undo history visualizer
+Plugin 'mbbill/undotree'
+nnoremap <F5> :UndotreeToggle<cr>
+
 " Plugin for goyo which clears the vim window for extensive writing
 Plugin 'junegunn/goyo.vim'
 
