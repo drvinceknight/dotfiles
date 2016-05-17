@@ -85,6 +85,10 @@ Plugin 'bkad/CamelCaseMotion'
 " Plugin for indentation level text objects
 Plugin 'michaeljsmith/vim-indent-object'
 
+" Plugin for undo history visualizer
+Plugin 'mbbill/undotree'
+nnoremap <F5> :UndotreeToggle<cr>
+
 " Plugin for goyo which clears the vim window for extensive writing
 Plugin 'junegunn/goyo.vim'
 
@@ -100,9 +104,6 @@ Bundle 'wellle/visual-split.vim'
 
 " Vim-fat-finger: common spelling mistakes
 Bundle 'chip/vim-fat-finger'
-
-" undotree
-Bundle 'mbbill/undotree'
 
 "All of your Plugins must be added before the following line
 call vundle#end()            " required
