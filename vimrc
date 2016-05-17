@@ -162,6 +162,9 @@ set history=200
 "Enable 256 colors
 set t_Co=256
 
+"Set column at 80 characters
+set colorcolumn=80
+
 """"""
 " Sage settings (from Franco Saliola)
 autocmd BufRead,BufNewFile *.sage,*.pyx,*.spyx set filetype=python
