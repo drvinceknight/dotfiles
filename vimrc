@@ -101,6 +101,9 @@ Bundle 'wellle/visual-split.vim'
 " Vim-fat-finger: common spelling mistakes
 Bundle 'chip/vim-fat-finger'
 
+" undotree
+Bundle 'mbbill/undotree'
+
 "All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
