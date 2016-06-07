@@ -105,6 +105,9 @@ Bundle 'wellle/visual-split.vim'
 " Vim-fat-finger: common spelling mistakes
 Bundle 'chip/vim-fat-finger'
 
+" Vim-OrgMode: org mode for vim (TODO lists etc)
+Bundle 'jceb/vim-orgmode'
+
 "All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
