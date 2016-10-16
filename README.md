@@ -66,6 +66,16 @@ You like a solarized color theme in your terminal:
 
 ### For Vim
 
+You (try) to build vim from source:
+
+```
+git clone git@github.com:vim/vim.git
+cd vim
+./configure --enable-python3interp --enable-pythoninterp
+make
+sudo make install
+```
+
 You use [vundle](https://github.com/gmarik/Vundle.vim) for your package
 management so do this to set it up:
 
