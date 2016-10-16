@@ -6,7 +6,7 @@
 [alias]
     lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold red)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
 [core]
-	editor = /usr/bin/vim
+	editor = vim
 [github]
 	user = drvinceknight
 [pack]
