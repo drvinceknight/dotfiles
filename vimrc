@@ -47,10 +47,6 @@ nmap <F10> :TagbarToggle<CR>
 Plugin 'scrooloose/syntastic'
 " For python require flake8 and pylint
 
-" jedi-vim: auto completion and more - needs BundleInstall to install (to get
-" jedi).
-Bundle 'git://github.com/davidhalter/jedi-vim'
-
 " vim-autopep8: F8 now runs autopep8
 Bundle 'tell-k/vim-autopep8'
 
@@ -105,8 +101,8 @@ Bundle 'wellle/visual-split.vim'
 " Vim-fat-finger: common spelling mistakes
 Bundle 'chip/vim-fat-finger'
 
-" Vim-OrgMode: org mode for vim (TODO lists etc)
-Bundle 'jceb/vim-orgmode'
+" Vim completer: code completion
+Bundle 'maralla/completor.vim'
 
 "All of your Plugins must be added before the following line
 call vundle#end()            " required

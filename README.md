@@ -64,6 +64,10 @@ You like a solarized color theme in your terminal:
 - On ubuntu you use
   [gnome-terminal-colors-solarized](https://github.com/Anthony25/gnome-terminal-colors-solarized)
 
+### Python
+
+Use Anaconda. (Trust me).
+
 ### For Vim
 
 You (try) to build vim from source:
@@ -71,7 +75,7 @@ You (try) to build vim from source:
 ```
 git clone git@github.com:vim/vim.git
 cd vim
-./configure --enable-python3interp --enable-pythoninterp
+./configure --enable-python3interp
 make
 sudo make install
 ```
