@@ -25,6 +25,9 @@ set laststatus=2  " Need this or powerline only kicks in when a split happens
 " fugitive.vim: Git
 Plugin 'tpope/vim-fugitive'
 
+" gitgutter: display git status in gutter
+Plugin 'airblade/vim-gitgutter'
+
 " tabularize: automates tabularization
 Plugin 'godlygeek/tabular'
 
@@ -134,9 +137,9 @@ set autoindent
 "Turns spell check on
 set spell
 "Sorts out tabs
+set expandtab
 set tabstop=4
 set shiftwidth=4
-set expandtab
 "Sorts out backspace behaviour:
 set backspace=indent,eol,start
 " Get rid of swp files (I backup myself)
