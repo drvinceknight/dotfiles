@@ -107,6 +107,15 @@ Bundle 'chip/vim-fat-finger'
 " Vim completer: code completion
 Bundle 'maralla/completor.vim'
 
+" Vim conda: conda virtual environments
+Bundle 'cjrh/vim-conda'
+let g:jedi#force_py_version = 2
+let g:UltisnipsUsePythonVersion = 2
+let g:conda_startup_msg_suppress = 1
+
+" Vim color picker
+Plugin 'KabbAmine/vCoolor.vim'
+
 "All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
