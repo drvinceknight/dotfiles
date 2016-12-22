@@ -107,6 +107,9 @@ Bundle 'chip/vim-fat-finger'
 " Vim completer: code completion
 Bundle 'maralla/completor.vim'
 
+" Maketable: Make nice tables
+Bundle 'mattn/vim-maketable'
+
 " Vim conda: conda virtual environments
 Bundle 'cjrh/vim-conda'
 let g:jedi#force_py_version = 2
