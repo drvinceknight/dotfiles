@@ -103,9 +103,14 @@ Bundle 'chip/vim-fat-finger'
 " Vim completer: code completion
 Bundle 'maralla/completor.vim'
 
-" Vim ale: an async linter.
+" Syntax linter
 " `pip install proselint`
-Plugin 'w0rp/ale'
+Plugin 'vim-syntastic/syntastic'
+let g:syntastic_tex_checkers = ['lacheck', 'text/language_check', 'proselint']
+let g:syntastic_rst_checkers = ['rstcheck', 'text/language_check', 'proselint']
+let g:syntastic_md_checkers = ['textlint', 'text/language_check', 'proselint']
+let g:syntastic_aggregate_errors = 1
+
 
 " Maketable: Make nice tables
 Bundle 'mattn/vim-maketable'
