@@ -104,6 +104,7 @@ Bundle 'chip/vim-fat-finger'
 Bundle 'maralla/completor.vim'
 
 " Vim ale: an async linter.
+" `pip install proselint`
 Plugin 'w0rp/ale'
 
 " Maketable: Make nice tables
