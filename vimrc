@@ -46,12 +46,8 @@ Plugin 'majutsushi/tagbar'
 " Mapping <F9> to get it to work
 nmap <F10> :TagbarToggle<CR>
 
-" syntastic: syntax checking
-Plugin 'scrooloose/syntastic'
-" For python require flake8 and pylint
-
-" vim-autopep8: F8 now runs autopep8
-Bundle 'tell-k/vim-autopep8'
+"" vim-autopep8: F8 now runs autopep8
+"Bundle 'tell-k/vim-autopep8'
 
 " gist-vim: create gists directly from vim
 Bundle 'mattn/webapi-vim'
@@ -107,14 +103,11 @@ Bundle 'chip/vim-fat-finger'
 " Vim completer: code completion
 Bundle 'maralla/completor.vim'
 
+" Vim ale: an async linter.
+Plugin 'w0rp/ale'
+
 " Maketable: Make nice tables
 Bundle 'mattn/vim-maketable'
-
-" Vim conda: conda virtual environments
-Bundle 'cjrh/vim-conda'
-let g:jedi#force_py_version = 2
-let g:UltisnipsUsePythonVersion = 2
-let g:conda_startup_msg_suppress = 1
 
 " Vim color picker
 Plugin 'KabbAmine/vCoolor.vim'
@@ -178,11 +171,7 @@ set t_Co=256
 "Set column at 80 characters
 set colorcolumn=80
 
-""""""
-" Sage settings (from Franco Saliola)
-autocmd BufRead,BufNewFile *.sage,*.pyx,*.spyx set filetype=python
-autocmd Filetype python set tabstop=4|set shiftwidth=4|set expandtab
-autocmd FileType python set makeprg=sage\ -b\ &&\ sage\ -t\ %
+set clipboard=unnamed
 
 
 " Disable the LaTeX plugin place holders:
