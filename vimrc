@@ -15,9 +15,6 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-" Vim-latex: LaTeX
-Plugin 'lervag/vimtex'
-
 " vim-airline: light weight alternative to powerline
 Plugin 'bling/vim-airline'
 set laststatus=2  " Need this or powerline only kicks in when a split happens
@@ -71,6 +68,9 @@ Plugin 'altercation/vim-colors-solarized'
 " Git runtime
 Plugin 'tpope/vim-git'
 
+" Git committia (fancy commit message editor)
+Plugin 'rhysd/committia.vim'
+
 " Plugin for function arguments text object
 Plugin 'vim-scripts/argtextobj.vim'
 
@@ -110,6 +110,9 @@ let g:syntastic_tex_checkers = ['lacheck', 'text/language_check', 'proselint']
 let g:syntastic_rst_checkers = ['rstcheck', 'text/language_check', 'proselint']
 let g:syntastic_md_checkers = ['textlint', 'text/language_check', 'proselint']
 let g:syntastic_aggregate_errors = 1
+
+" Vim-latex: LaTeX
+Plugin 'lervag/vimtex'
 
 
 " Maketable: Make nice tables
