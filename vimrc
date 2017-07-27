@@ -68,9 +68,6 @@ Plugin 'altercation/vim-colors-solarized'
 " Git runtime
 Plugin 'tpope/vim-git'
 
-" Git committia (fancy commit message editor)
-Plugin 'rhysd/committia.vim'
-
 " Plugin for function arguments text object
 Plugin 'vim-scripts/argtextobj.vim'
 
