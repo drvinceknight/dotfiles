@@ -100,13 +100,15 @@ Bundle 'chip/vim-fat-finger'
 " Vim completer: code completion
 Bundle 'maralla/completor.vim'
 
-" Syntax linter
-" `pip install proselint`
-Plugin 'vim-syntastic/syntastic'
-let g:syntastic_tex_checkers = ['lacheck', 'text/language_check', 'proselint']
-let g:syntastic_rst_checkers = ['rstcheck', 'text/language_check', 'proselint']
-let g:syntastic_md_checkers = ['textlint', 'text/language_check', 'proselint']
-let g:syntastic_aggregate_errors = 1
+"" Syntax linter
+"" `pip install proselint`
+"Plugin 'vim-syntastic/syntastic'
+"let g:syntastic_tex_checkers = ['lacheck', 'text/language_check', 'proselint']
+"let g:syntastic_rst_checkers = ['rstcheck', 'text/language_check', 'proselint']
+"let g:syntastic_md_checkers = ['textlint', 'text/language_check', 'proselint']
+"let g:syntastic_aggregate_errors = 1
+Plugin 'w0rp/ale'
+let g:ale_lint_on_text_changed = 'never'
 
 " Vim-latex: LaTeX
 Plugin 'lervag/vimtex'
