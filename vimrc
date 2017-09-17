@@ -100,15 +100,16 @@ Bundle 'chip/vim-fat-finger'
 " Vim completer: code completion
 Bundle 'maralla/completor.vim'
 
+" Vim trailing whitespace: highlights unwanted whitespace
+Bundle 'bronson/vim-trailing-whitespace'
+
 "" Syntax linter
 "" `pip install proselint`
-"Plugin 'vim-syntastic/syntastic'
-"let g:syntastic_tex_checkers = ['lacheck', 'text/language_check', 'proselint']
-"let g:syntastic_rst_checkers = ['rstcheck', 'text/language_check', 'proselint']
-"let g:syntastic_md_checkers = ['textlint', 'text/language_check', 'proselint']
-"let g:syntastic_aggregate_errors = 1
 Plugin 'w0rp/ale'
 let g:ale_lint_on_text_changed = 'never'
+let g:ale_linters = {'jsx': ['lacheck', 'text/language_check', 'proselint']}
+let g:ale_linters = {'rst': ['rstcheck', 'text/language_check', 'proselint']}
+let g:ale_linters = {'md': ['textlint', 'text/language_check', 'proselint']}
 
 " Vim-latex: LaTeX
 Plugin 'lervag/vimtex'
@@ -119,6 +120,9 @@ Bundle 'mattn/vim-maketable'
 
 " Vim color picker
 Plugin 'KabbAmine/vCoolor.vim'
+
+" Vim easy motion
+Plugin 'easymotion/vim-easymotion'
 
 "All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -143,9 +147,7 @@ nnoremap <C-P> :prev<Enter>
 set confirm
 "This makes vim show the current row and column at the bottom right of the screen
 set ruler
-" Remove any trailing whitespace that is in the file
-autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
-" Sets autoindent
+"Sets autoindent
 set autoindent
 "Turns spell check on
 set spell
