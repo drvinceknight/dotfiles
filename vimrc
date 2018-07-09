@@ -35,20 +35,13 @@ Plugin 'tpope/vim-markdown'
 Plugin 'scrooloose/nerdtree'
 nmap <F9> :NERDTree<CR>
 
-" vim-surround: for surrounding visual selections
-Plugin 'tpope/vim-surround'
-
 " tagbar: to navigate all the tags of a file
 Plugin 'majutsushi/tagbar'
 " Mapping <F9> to get it to work
 nmap <F10> :TagbarToggle<CR>
 
-"" vim-autopep8: F8 now runs autopep8
-"Bundle 'tell-k/vim-autopep8'
-
-" gist-vim: create gists directly from vim
-Bundle 'mattn/webapi-vim'
-Bundle 'mattn/gist-vim'
+" sandwich: operators and text object for surrounding things
+Bundle 'machakann/vim-sandwich'
 
 " vim-tmux-navigator: allow vim navigation between tmux and vim
 Bundle 'christoomey/vim-tmux-navigator'
@@ -123,6 +116,9 @@ Plugin 'KabbAmine/vCoolor.vim'
 
 " Vim easy motion
 Plugin 'easymotion/vim-easymotion'
+
+" Vim support for python formatter black (required `pip install black`)
+Plugin 'ambv/black'
 
 "All of your Plugins must be added before the following line
 call vundle#end()            " required
