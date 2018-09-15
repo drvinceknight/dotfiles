@@ -120,6 +120,12 @@ Plugin 'easymotion/vim-easymotion'
 " Vim support for python formatter black (required `pip install black`)
 Plugin 'ambv/black'
 
+" Vim support for taskwarrior
+Bundle 'farseer90718/vim-taskwarrior'
+
+" Indent markers
+Bundle 'Yggdroot/indentLine'
+
 "All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
