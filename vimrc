@@ -120,11 +120,9 @@ Plugin 'easymotion/vim-easymotion'
 " Vim support for python formatter black (required `pip install black`)
 Plugin 'ambv/black'
 
-" Vim support for taskwarrior
-Bundle 'farseer90718/vim-taskwarrior'
-
 " Indent markers
 Bundle 'Yggdroot/indentLine'
+let g:indentLine_setConceal = 0
 
 "All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -202,3 +200,5 @@ set shell=bash
 
 " Something for markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
+set conceallevel=0
